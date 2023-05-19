@@ -1,0 +1,2 @@
+This is an example of an English text. The text is very short. Probably the false detection is due to the shortness of the text! Maybe if we create 
+a longer text and hopefully this will change the result of the simple letter statistic test.

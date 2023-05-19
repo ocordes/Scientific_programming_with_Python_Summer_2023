@@ -1,0 +1,11 @@
+When typing longer texts, we often often make the mistake to
+repeat individual words such as here here. this is a punctuation
+error.
+
+Here another test for words
+words that are double at the end and the beginning of the line.
+
+An another test
+
+test with an empty line between the occurrence of a repeated word.
+this should give also an error.

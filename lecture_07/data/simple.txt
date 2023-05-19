@@ -1,0 +1,4 @@
+This is a demo text, which
+should go over more than one 
+  line to demonstrate, how file-IO is
+working in Python.
