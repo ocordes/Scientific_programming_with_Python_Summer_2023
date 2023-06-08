@@ -1,0 +1,39 @@
+\documentclass[twocolumn,a4paper]{scrartcl}
+%
+\usepackage{blindtext}
+\usepackage{graphicx}
+
+\usepackage{lipsum}
+
+%
+\title{Python plots for LaTeX}
+%
+\begin{document}
+\maketitle
+\section{Introduction}
+
+\lipsum[1-1]
+
+%\noindent
+%
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\columnwidth]{someplot.png}
+  \caption{Scaled down of the originial matplotlib plot.
+    Now, the text looks very small.}
+  \label{image1}
+\end{figure}
+%
+
+%\begin{figure}[h]
+%  \centering
+%  % do NOT specify any scaling!!
+%  \includegraphics{niceplot.png}
+%  \caption{The new plot has the correct size and the
+%  font sizes well match the main text!}
+%  \label{image2}
+%\end{figure}
+
+Some random text \dots.
+
+\end{document}
