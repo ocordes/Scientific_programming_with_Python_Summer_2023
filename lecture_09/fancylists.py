@@ -18,9 +18,9 @@ class FList(object):
     def __init__(self, value):
         # copy values if possible
         if isinstance(value, (tuple,list)):
-            self._value = value
+            self._value = list(value)   # make a real copy of the original list
         elif isinstance(value, FList):
-            self._value = value._value
+            self._value = list(value._value) # make a real copy of the original list
         else:
             # simplest reaction, can be changed
             raise TypeError('value must be of type list or tuple')
@@ -50,14 +50,14 @@ class FList(object):
     # fancy indexing and masking
     def __getitem__(self, index):
         #print(f'__getitem__({index})')   # have a look for all different types!
-        if isinstance(index,int):
-            return self._value[index]
-        elif isinstance(index, (tuple,list)):
+        if isinstance(index, (tuple,list)):
+            # handle fancy indexing
             if isinstance(index[0], bool):
                 return FList([item for i,item in enumerate(self._value) if index[i]])
             elif isinstance(index[0], int):
                 return FList([self._value[i] for i in index])
         else:
+            # handle normal indexing and slicing
             return self._value.__getitem__(index)
             
             
