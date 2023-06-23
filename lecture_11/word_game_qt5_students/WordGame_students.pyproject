@@ -1,0 +1,3 @@
+{
+    "files": ["player.py","form.ui","mainwindow.py","mainform.py","word_game.py","dialog.ui"]
+}
